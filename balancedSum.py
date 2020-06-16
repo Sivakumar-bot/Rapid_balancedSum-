@@ -6,10 +6,10 @@ def balancedSum(arr):
     """
     balancedSum function takes one argument as an array(list)
     """
-    #creating a accumulated list (left to right of the Array)
+    #creating a cumulative list (left to right of the Array)
     l=list(accumulate(arr)) 
     
-    #creating a accumulated list (Right to left of the Array)
+    #creating a cumulative list (Right to left of the Array)
     arr.reverse()
     r=list(accumulate(arr))
     r.reverse()
